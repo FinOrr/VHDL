@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../SEA-Demo.srcs/sources_1/new/TopLevel.vhd" \
+"../../../../SEA-Demo.srcs/sim_1/new/TB_TopLevel.vhd" \
+
+# Do not sort compile order
+nosort

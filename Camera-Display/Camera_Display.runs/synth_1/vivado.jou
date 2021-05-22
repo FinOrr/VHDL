@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 27 18:54:33 2020
+# Process ID: 14088
+# Current directory: C:/git/VHDL/Camera_Display/Camera_Display.runs/synth_1
+# Command line: vivado.exe -log I2C_Master.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source I2C_Master.tcl
+# Log file: C:/git/VHDL/Camera_Display/Camera_Display.runs/synth_1/I2C_Master.vds
+# Journal file: C:/git/VHDL/Camera_Display/Camera_Display.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source I2C_Master.tcl -notrace

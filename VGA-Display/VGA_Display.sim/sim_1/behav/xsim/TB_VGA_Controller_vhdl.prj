@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Documents/GitHub/Camera_Display/sources_1/new/System_Parameters.vhd" \
+"../../../../../Documents/GitHub/Camera_Display/sources_1/new/Pulse_Generator.vhd" \
+"../../../../../Documents/GitHub/Camera_Display/sources_1/new/VGA_Controller.vhd" \
+"../../../../../Documents/GitHub/Camera_Display/sim_1/new/TB_VGA_Controller.vhd" \
+
+# Do not sort compile order
+nosort

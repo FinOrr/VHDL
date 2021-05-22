@@ -1,0 +1,4 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../../Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../VGA_Display.srcs/sources_1/ip/Clock_Generator"
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../VGA_Display.srcs/sources_1/ip/Clock_Generator"
+Clock_Generator_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../VGA_Display.srcs/sources_1/ip/Clock_Generator/Clock_Generator_sim_netlist.vhdl,incdir="../../../../VGA_Display.srcs/sources_1/ip/Clock_Generator"
+glbl.v,Verilog,xil_defaultlib,glbl.v

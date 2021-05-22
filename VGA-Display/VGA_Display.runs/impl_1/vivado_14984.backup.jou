@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Apr 12 13:54:09 2020
+# Process ID: 14984
+# Current directory: C:/Users/user/VGA_Display/VGA_Display.runs/impl_1
+# Command line: vivado.exe -log Top_Level.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Top_Level.tcl -notrace
+# Log file: C:/Users/user/VGA_Display/VGA_Display.runs/impl_1/Top_Level.vdi
+# Journal file: C:/Users/user/VGA_Display/VGA_Display.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Top_Level.tcl -notrace
