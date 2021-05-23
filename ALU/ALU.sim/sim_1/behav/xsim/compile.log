@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Logical_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/git/VHDL/ALU/ALU.srcs/sim_1/new/TB_Logical_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_Logical_Unit'

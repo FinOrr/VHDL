@@ -1,0 +1,847 @@
+
+*** Running vivado
+    with args -log ALU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ALU.tcl -notrace
+Command: synth_design -top ALU -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10868 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 573.020 ; gain = 243.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:22]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:21]
+INFO: [Synth 8-3491] module 'Logical_Unit' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:4' bound to instance 'Logic_Unit' of component 'Logical_Unit' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'Logical_Unit' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Logical_Unit' (1#1) [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:16]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:5' bound to instance 'Decoder_Unit' of component 'Decoder' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (2#1) [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:15]
+INFO: [Synth 8-3491] module 'Full_Adder' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:4' bound to instance 'Adder_Unit' of component 'Full_Adder' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'Full_Adder' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Full_Adder' (3#1) [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Bit_Slice' (4#1) [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:21]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'Bit_Slice' declared at 'C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Bit_Slice.vhd:4' bound to instance 'ALU' of component 'Bit_Slice' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (5#1) [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/ALU.vhd:22]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 647.082 ; gain = 317.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 647.082 ; gain = 317.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 647.082 ; gain = 317.074
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 647.082 ; gain = 317.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 192   
++---Registers : 
+	                4 Bit    Registers := 64    
+	                3 Bit    Registers := 128   
+	                2 Bit    Registers := 64    
+	                1 Bit    Registers := 512   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Logical_Unit 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module Decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+Module Full_Adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                1 Bit    Registers := 6     
+Module Bit_Slice 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'BITSLICE[63].ALU/Adder_Unit/B_reg' into 'BITSLICE[63].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[63].ALU/Adder_Unit/A_reg' into 'BITSLICE[63].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[62].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[62].ALU/Adder_Unit/B_reg' into 'BITSLICE[62].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[62].ALU/Adder_Unit/A_reg' into 'BITSLICE[62].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[61].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[61].ALU/Adder_Unit/B_reg' into 'BITSLICE[61].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[61].ALU/Adder_Unit/A_reg' into 'BITSLICE[61].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[60].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[60].ALU/Adder_Unit/B_reg' into 'BITSLICE[60].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[60].ALU/Adder_Unit/A_reg' into 'BITSLICE[60].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[59].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[59].ALU/Adder_Unit/B_reg' into 'BITSLICE[59].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[59].ALU/Adder_Unit/A_reg' into 'BITSLICE[59].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[58].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[58].ALU/Adder_Unit/B_reg' into 'BITSLICE[58].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[58].ALU/Adder_Unit/A_reg' into 'BITSLICE[58].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[57].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[57].ALU/Adder_Unit/B_reg' into 'BITSLICE[57].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[57].ALU/Adder_Unit/A_reg' into 'BITSLICE[57].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[56].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[56].ALU/Adder_Unit/B_reg' into 'BITSLICE[56].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[56].ALU/Adder_Unit/A_reg' into 'BITSLICE[56].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[55].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[55].ALU/Adder_Unit/B_reg' into 'BITSLICE[55].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[55].ALU/Adder_Unit/A_reg' into 'BITSLICE[55].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[54].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[54].ALU/Adder_Unit/B_reg' into 'BITSLICE[54].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[54].ALU/Adder_Unit/A_reg' into 'BITSLICE[54].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[53].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[53].ALU/Adder_Unit/B_reg' into 'BITSLICE[53].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[53].ALU/Adder_Unit/A_reg' into 'BITSLICE[53].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[52].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[52].ALU/Adder_Unit/B_reg' into 'BITSLICE[52].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[52].ALU/Adder_Unit/A_reg' into 'BITSLICE[52].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[51].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[51].ALU/Adder_Unit/B_reg' into 'BITSLICE[51].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[51].ALU/Adder_Unit/A_reg' into 'BITSLICE[51].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[50].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[50].ALU/Adder_Unit/B_reg' into 'BITSLICE[50].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[50].ALU/Adder_Unit/A_reg' into 'BITSLICE[50].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[49].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[49].ALU/Adder_Unit/B_reg' into 'BITSLICE[49].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[49].ALU/Adder_Unit/A_reg' into 'BITSLICE[49].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[48].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[48].ALU/Adder_Unit/B_reg' into 'BITSLICE[48].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[48].ALU/Adder_Unit/A_reg' into 'BITSLICE[48].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[47].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[47].ALU/Adder_Unit/B_reg' into 'BITSLICE[47].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[47].ALU/Adder_Unit/A_reg' into 'BITSLICE[47].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[46].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[46].ALU/Adder_Unit/B_reg' into 'BITSLICE[46].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[46].ALU/Adder_Unit/A_reg' into 'BITSLICE[46].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[45].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[45].ALU/Adder_Unit/B_reg' into 'BITSLICE[45].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[45].ALU/Adder_Unit/A_reg' into 'BITSLICE[45].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[44].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[44].ALU/Adder_Unit/B_reg' into 'BITSLICE[44].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[44].ALU/Adder_Unit/A_reg' into 'BITSLICE[44].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[43].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[43].ALU/Adder_Unit/B_reg' into 'BITSLICE[43].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[43].ALU/Adder_Unit/A_reg' into 'BITSLICE[43].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[42].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[42].ALU/Adder_Unit/B_reg' into 'BITSLICE[42].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[42].ALU/Adder_Unit/A_reg' into 'BITSLICE[42].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[41].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[41].ALU/Adder_Unit/B_reg' into 'BITSLICE[41].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[41].ALU/Adder_Unit/A_reg' into 'BITSLICE[41].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[40].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[40].ALU/Adder_Unit/B_reg' into 'BITSLICE[40].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[40].ALU/Adder_Unit/A_reg' into 'BITSLICE[40].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[39].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[39].ALU/Adder_Unit/B_reg' into 'BITSLICE[39].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[39].ALU/Adder_Unit/A_reg' into 'BITSLICE[39].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[38].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[38].ALU/Adder_Unit/B_reg' into 'BITSLICE[38].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[38].ALU/Adder_Unit/A_reg' into 'BITSLICE[38].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[37].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[37].ALU/Adder_Unit/B_reg' into 'BITSLICE[37].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[37].ALU/Adder_Unit/A_reg' into 'BITSLICE[37].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[36].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[36].ALU/Adder_Unit/B_reg' into 'BITSLICE[36].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[36].ALU/Adder_Unit/A_reg' into 'BITSLICE[36].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[35].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[35].ALU/Adder_Unit/B_reg' into 'BITSLICE[35].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[35].ALU/Adder_Unit/A_reg' into 'BITSLICE[35].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[34].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[34].ALU/Adder_Unit/B_reg' into 'BITSLICE[34].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[34].ALU/Adder_Unit/A_reg' into 'BITSLICE[34].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[33].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[33].ALU/Adder_Unit/B_reg' into 'BITSLICE[33].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[33].ALU/Adder_Unit/A_reg' into 'BITSLICE[33].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[32].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[32].ALU/Adder_Unit/B_reg' into 'BITSLICE[32].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[32].ALU/Adder_Unit/A_reg' into 'BITSLICE[32].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[31].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[31].ALU/Adder_Unit/B_reg' into 'BITSLICE[31].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[31].ALU/Adder_Unit/A_reg' into 'BITSLICE[31].ALU/Logic_Unit/A_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Synth 8-4471] merging register 'BITSLICE[30].ALU/Decoder_Unit/Control_reg[1:0]' into 'BITSLICE[63].ALU/Decoder_Unit/Control_reg[1:0]' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Decoder.vhd:22]
+INFO: [Synth 8-4471] merging register 'BITSLICE[30].ALU/Adder_Unit/B_reg' into 'BITSLICE[30].ALU/Logic_Unit/B_reg' [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:24]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[63].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[62].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[61].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[60].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[59].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[58].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[57].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[56].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[55].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[54].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[53].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[52].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[51].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[50].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[49].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[48].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[47].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[46].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[45].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[44].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[43].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[42].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[41].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[40].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[39].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[38].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[37].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[36].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[35].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[34].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[33].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[32].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[31].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[30].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[29].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[28].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[27].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[26].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[25].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[24].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[23].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[22].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[21].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[20].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[19].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[18].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[17].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[16].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[15].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[14].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[13].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[12].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[11].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[10].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[9].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[8].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[7].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[6].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[5].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[4].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[3].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[2].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[1].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'BITSLICE[0].ALU/Logic_Unit/o_Result_reg' and it is trimmed from '3' to '1' bits. [C:/git/VHDL/ALU/ALU.srcs/sources_1/new/Logical_Unit.vhd:35]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[1].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[2].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[3].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[4].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[5].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[6].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[7].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[8].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[9].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[10].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[11].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[12].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[13].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[14].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[15].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[16].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[17].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[18].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[19].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[20].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[21].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[22].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[23].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[24].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[25].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[26].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[27].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[28].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[29].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[30].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[31].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[32].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[33].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[34].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[35].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[36].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[37].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[38].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[39].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[40].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[41].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[42].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[43].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[44].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[45].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[46].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[47].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[48].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[49].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[50].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[51].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[52].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[53].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[54].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[55].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[56].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[57].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[58].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[59].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[60].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[61].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[62].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BITSLICE[63].ALU/Adder_Unit/Carry_In_reg )
+INFO: [Synth 8-3886] merging instance 'BITSLICE[0].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[1].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[0].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[1].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[1].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[2].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[1].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[2].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[2].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[3].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[2].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[3].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[3].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[4].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[3].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[4].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[4].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[5].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[4].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[5].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[5].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[6].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[5].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[6].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[6].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[7].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[6].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[7].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[7].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[8].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[7].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[8].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[8].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[9].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[8].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[9].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[9].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[10].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[9].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[10].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[10].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[11].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[10].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[11].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[11].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[12].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[11].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[12].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[12].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[13].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[12].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[13].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[13].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[14].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[13].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[14].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[14].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[15].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[14].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[15].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[15].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[16].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[15].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[16].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[16].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[17].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[16].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[17].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[17].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[18].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[17].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[18].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[18].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[19].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[18].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[19].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[19].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[20].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[19].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[20].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[20].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[21].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[20].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[21].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[21].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[22].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[21].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[22].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[22].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[23].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[22].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[23].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[23].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[24].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[23].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[24].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[24].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[25].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[24].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[25].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[25].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[26].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[25].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[26].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[26].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[27].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[26].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[27].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[27].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[28].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[27].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[28].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[28].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[29].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[28].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[29].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[29].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[30].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[29].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[30].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[30].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[31].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[30].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[31].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[31].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[32].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[31].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[32].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[32].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[33].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[32].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[33].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[33].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[34].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[33].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[34].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[34].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[35].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[34].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[35].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[35].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[36].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[35].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[36].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[36].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[37].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[36].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[37].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[37].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[38].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[37].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[38].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[38].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[39].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[38].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[39].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[39].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[40].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[39].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[40].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[40].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[41].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[40].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[41].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[41].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[42].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[41].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[42].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[42].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[43].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[42].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[43].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[43].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[44].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[43].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[44].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[44].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[45].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[44].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[45].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[45].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[46].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[45].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[46].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[46].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[47].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[46].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[47].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[47].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[48].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[47].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[48].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[48].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[49].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[48].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[49].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[49].ALU/Decoder_Unit/o_Enable_reg[0]' (FD) to 'BITSLICE[50].ALU/Decoder_Unit/o_Enable_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BITSLICE[49].ALU/Decoder_Unit/o_Enable_reg[1]' (FD) to 'BITSLICE[50].ALU/Decoder_Unit/o_Enable_reg[1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 792.684 ; gain = 462.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 798.965 ; gain = 468.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 798.965 ; gain = 468.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 799.941 ; gain = 469.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 799.941 ; gain = 469.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 799.941 ; gain = 469.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 799.941 ; gain = 469.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 799.941 ; gain = 469.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 799.941 ; gain = 469.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |    67|
+|3     |LUT2 |   129|
+|4     |LUT3 |    65|
+|5     |FDRE |   263|
+|6     |IBUF |   135|
+|7     |OBUF |    64|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------+-----------------+------+
+|      |Instance             |Module           |Cells |
++------+---------------------+-----------------+------+
+|1     |top                  |                 |   724|
+|2     |  \BITSLICE[0].ALU   |Bit_Slice        |    10|
+|3     |    Adder_Unit       |Full_Adder_187   |     3|
+|4     |    Logic_Unit       |Logical_Unit_188 |     7|
+|5     |  \BITSLICE[10].ALU  |Bit_Slice_0      |     8|
+|6     |    Adder_Unit       |Full_Adder_185   |     2|
+|7     |    Logic_Unit       |Logical_Unit_186 |     6|
+|8     |  \BITSLICE[11].ALU  |Bit_Slice_1      |     8|
+|9     |    Adder_Unit       |Full_Adder_183   |     2|
+|10    |    Logic_Unit       |Logical_Unit_184 |     6|
+|11    |  \BITSLICE[12].ALU  |Bit_Slice_2      |     8|
+|12    |    Adder_Unit       |Full_Adder_181   |     2|
+|13    |    Logic_Unit       |Logical_Unit_182 |     6|
+|14    |  \BITSLICE[13].ALU  |Bit_Slice_3      |     8|
+|15    |    Adder_Unit       |Full_Adder_179   |     2|
+|16    |    Logic_Unit       |Logical_Unit_180 |     6|
+|17    |  \BITSLICE[14].ALU  |Bit_Slice_4      |     8|
+|18    |    Adder_Unit       |Full_Adder_177   |     2|
+|19    |    Logic_Unit       |Logical_Unit_178 |     6|
+|20    |  \BITSLICE[15].ALU  |Bit_Slice_5      |     8|
+|21    |    Adder_Unit       |Full_Adder_175   |     2|
+|22    |    Logic_Unit       |Logical_Unit_176 |     6|
+|23    |  \BITSLICE[16].ALU  |Bit_Slice_6      |     8|
+|24    |    Adder_Unit       |Full_Adder_173   |     2|
+|25    |    Logic_Unit       |Logical_Unit_174 |     6|
+|26    |  \BITSLICE[17].ALU  |Bit_Slice_7      |     8|
+|27    |    Adder_Unit       |Full_Adder_171   |     2|
+|28    |    Logic_Unit       |Logical_Unit_172 |     6|
+|29    |  \BITSLICE[18].ALU  |Bit_Slice_8      |     8|
+|30    |    Adder_Unit       |Full_Adder_169   |     2|
+|31    |    Logic_Unit       |Logical_Unit_170 |     6|
+|32    |  \BITSLICE[19].ALU  |Bit_Slice_9      |     8|
+|33    |    Adder_Unit       |Full_Adder_167   |     2|
+|34    |    Logic_Unit       |Logical_Unit_168 |     6|
+|35    |  \BITSLICE[1].ALU   |Bit_Slice_10     |     8|
+|36    |    Adder_Unit       |Full_Adder_165   |     2|
+|37    |    Logic_Unit       |Logical_Unit_166 |     6|
+|38    |  \BITSLICE[20].ALU  |Bit_Slice_11     |     8|
+|39    |    Adder_Unit       |Full_Adder_163   |     2|
+|40    |    Logic_Unit       |Logical_Unit_164 |     6|
+|41    |  \BITSLICE[21].ALU  |Bit_Slice_12     |     8|
+|42    |    Adder_Unit       |Full_Adder_161   |     2|
+|43    |    Logic_Unit       |Logical_Unit_162 |     6|
+|44    |  \BITSLICE[22].ALU  |Bit_Slice_13     |     8|
+|45    |    Adder_Unit       |Full_Adder_159   |     2|
+|46    |    Logic_Unit       |Logical_Unit_160 |     6|
+|47    |  \BITSLICE[23].ALU  |Bit_Slice_14     |     8|
+|48    |    Adder_Unit       |Full_Adder_157   |     2|
+|49    |    Logic_Unit       |Logical_Unit_158 |     6|
+|50    |  \BITSLICE[24].ALU  |Bit_Slice_15     |     8|
+|51    |    Adder_Unit       |Full_Adder_155   |     2|
+|52    |    Logic_Unit       |Logical_Unit_156 |     6|
+|53    |  \BITSLICE[25].ALU  |Bit_Slice_16     |     8|
+|54    |    Adder_Unit       |Full_Adder_153   |     2|
+|55    |    Logic_Unit       |Logical_Unit_154 |     6|
+|56    |  \BITSLICE[26].ALU  |Bit_Slice_17     |     8|
+|57    |    Adder_Unit       |Full_Adder_151   |     2|
+|58    |    Logic_Unit       |Logical_Unit_152 |     6|
+|59    |  \BITSLICE[27].ALU  |Bit_Slice_18     |     8|
+|60    |    Adder_Unit       |Full_Adder_149   |     2|
+|61    |    Logic_Unit       |Logical_Unit_150 |     6|
+|62    |  \BITSLICE[28].ALU  |Bit_Slice_19     |     8|
+|63    |    Adder_Unit       |Full_Adder_147   |     2|
+|64    |    Logic_Unit       |Logical_Unit_148 |     6|
+|65    |  \BITSLICE[29].ALU  |Bit_Slice_20     |     8|
+|66    |    Adder_Unit       |Full_Adder_145   |     2|
+|67    |    Logic_Unit       |Logical_Unit_146 |     6|
+|68    |  \BITSLICE[2].ALU   |Bit_Slice_21     |     8|
+|69    |    Adder_Unit       |Full_Adder_143   |     2|
+|70    |    Logic_Unit       |Logical_Unit_144 |     6|
+|71    |  \BITSLICE[30].ALU  |Bit_Slice_22     |     8|
+|72    |    Adder_Unit       |Full_Adder_141   |     2|
+|73    |    Logic_Unit       |Logical_Unit_142 |     6|
+|74    |  \BITSLICE[31].ALU  |Bit_Slice_23     |     8|
+|75    |    Adder_Unit       |Full_Adder_139   |     2|
+|76    |    Logic_Unit       |Logical_Unit_140 |     6|
+|77    |  \BITSLICE[32].ALU  |Bit_Slice_24     |     8|
+|78    |    Adder_Unit       |Full_Adder_137   |     2|
+|79    |    Logic_Unit       |Logical_Unit_138 |     6|
+|80    |  \BITSLICE[33].ALU  |Bit_Slice_25     |     8|
+|81    |    Adder_Unit       |Full_Adder_135   |     2|
+|82    |    Logic_Unit       |Logical_Unit_136 |     6|
+|83    |  \BITSLICE[34].ALU  |Bit_Slice_26     |     8|
+|84    |    Adder_Unit       |Full_Adder_133   |     2|
+|85    |    Logic_Unit       |Logical_Unit_134 |     6|
+|86    |  \BITSLICE[35].ALU  |Bit_Slice_27     |     8|
+|87    |    Adder_Unit       |Full_Adder_131   |     2|
+|88    |    Logic_Unit       |Logical_Unit_132 |     6|
+|89    |  \BITSLICE[36].ALU  |Bit_Slice_28     |     8|
+|90    |    Adder_Unit       |Full_Adder_129   |     2|
+|91    |    Logic_Unit       |Logical_Unit_130 |     6|
+|92    |  \BITSLICE[37].ALU  |Bit_Slice_29     |     8|
+|93    |    Adder_Unit       |Full_Adder_127   |     2|
+|94    |    Logic_Unit       |Logical_Unit_128 |     6|
+|95    |  \BITSLICE[38].ALU  |Bit_Slice_30     |     8|
+|96    |    Adder_Unit       |Full_Adder_125   |     2|
+|97    |    Logic_Unit       |Logical_Unit_126 |     6|
+|98    |  \BITSLICE[39].ALU  |Bit_Slice_31     |     8|
+|99    |    Adder_Unit       |Full_Adder_123   |     2|
+|100   |    Logic_Unit       |Logical_Unit_124 |     6|
+|101   |  \BITSLICE[3].ALU   |Bit_Slice_32     |     8|
+|102   |    Adder_Unit       |Full_Adder_121   |     2|
+|103   |    Logic_Unit       |Logical_Unit_122 |     6|
+|104   |  \BITSLICE[40].ALU  |Bit_Slice_33     |     8|
+|105   |    Adder_Unit       |Full_Adder_119   |     2|
+|106   |    Logic_Unit       |Logical_Unit_120 |     6|
+|107   |  \BITSLICE[41].ALU  |Bit_Slice_34     |     8|
+|108   |    Adder_Unit       |Full_Adder_117   |     2|
+|109   |    Logic_Unit       |Logical_Unit_118 |     6|
+|110   |  \BITSLICE[42].ALU  |Bit_Slice_35     |     8|
+|111   |    Adder_Unit       |Full_Adder_115   |     2|
+|112   |    Logic_Unit       |Logical_Unit_116 |     6|
+|113   |  \BITSLICE[43].ALU  |Bit_Slice_36     |     8|
+|114   |    Adder_Unit       |Full_Adder_113   |     2|
+|115   |    Logic_Unit       |Logical_Unit_114 |     6|
+|116   |  \BITSLICE[44].ALU  |Bit_Slice_37     |     8|
+|117   |    Adder_Unit       |Full_Adder_111   |     2|
+|118   |    Logic_Unit       |Logical_Unit_112 |     6|
+|119   |  \BITSLICE[45].ALU  |Bit_Slice_38     |     8|
+|120   |    Adder_Unit       |Full_Adder_109   |     2|
+|121   |    Logic_Unit       |Logical_Unit_110 |     6|
+|122   |  \BITSLICE[46].ALU  |Bit_Slice_39     |     8|
+|123   |    Adder_Unit       |Full_Adder_107   |     2|
+|124   |    Logic_Unit       |Logical_Unit_108 |     6|
+|125   |  \BITSLICE[47].ALU  |Bit_Slice_40     |     8|
+|126   |    Adder_Unit       |Full_Adder_105   |     2|
+|127   |    Logic_Unit       |Logical_Unit_106 |     6|
+|128   |  \BITSLICE[48].ALU  |Bit_Slice_41     |     8|
+|129   |    Adder_Unit       |Full_Adder_103   |     2|
+|130   |    Logic_Unit       |Logical_Unit_104 |     6|
+|131   |  \BITSLICE[49].ALU  |Bit_Slice_42     |     8|
+|132   |    Adder_Unit       |Full_Adder_101   |     2|
+|133   |    Logic_Unit       |Logical_Unit_102 |     6|
+|134   |  \BITSLICE[4].ALU   |Bit_Slice_43     |     8|
+|135   |    Adder_Unit       |Full_Adder_99    |     2|
+|136   |    Logic_Unit       |Logical_Unit_100 |     6|
+|137   |  \BITSLICE[50].ALU  |Bit_Slice_44     |     8|
+|138   |    Adder_Unit       |Full_Adder_97    |     2|
+|139   |    Logic_Unit       |Logical_Unit_98  |     6|
+|140   |  \BITSLICE[51].ALU  |Bit_Slice_45     |     8|
+|141   |    Adder_Unit       |Full_Adder_95    |     2|
+|142   |    Logic_Unit       |Logical_Unit_96  |     6|
+|143   |  \BITSLICE[52].ALU  |Bit_Slice_46     |     8|
+|144   |    Adder_Unit       |Full_Adder_93    |     2|
+|145   |    Logic_Unit       |Logical_Unit_94  |     6|
+|146   |  \BITSLICE[53].ALU  |Bit_Slice_47     |     8|
+|147   |    Adder_Unit       |Full_Adder_91    |     2|
+|148   |    Logic_Unit       |Logical_Unit_92  |     6|
+|149   |  \BITSLICE[54].ALU  |Bit_Slice_48     |     8|
+|150   |    Adder_Unit       |Full_Adder_89    |     2|
+|151   |    Logic_Unit       |Logical_Unit_90  |     6|
+|152   |  \BITSLICE[55].ALU  |Bit_Slice_49     |     8|
+|153   |    Adder_Unit       |Full_Adder_87    |     2|
+|154   |    Logic_Unit       |Logical_Unit_88  |     6|
+|155   |  \BITSLICE[56].ALU  |Bit_Slice_50     |     8|
+|156   |    Adder_Unit       |Full_Adder_85    |     2|
+|157   |    Logic_Unit       |Logical_Unit_86  |     6|
+|158   |  \BITSLICE[57].ALU  |Bit_Slice_51     |     8|
+|159   |    Adder_Unit       |Full_Adder_83    |     2|
+|160   |    Logic_Unit       |Logical_Unit_84  |     6|
+|161   |  \BITSLICE[58].ALU  |Bit_Slice_52     |     8|
+|162   |    Adder_Unit       |Full_Adder_81    |     2|
+|163   |    Logic_Unit       |Logical_Unit_82  |     6|
+|164   |  \BITSLICE[59].ALU  |Bit_Slice_53     |     8|
+|165   |    Adder_Unit       |Full_Adder_79    |     2|
+|166   |    Logic_Unit       |Logical_Unit_80  |     6|
+|167   |  \BITSLICE[5].ALU   |Bit_Slice_54     |     8|
+|168   |    Adder_Unit       |Full_Adder_77    |     2|
+|169   |    Logic_Unit       |Logical_Unit_78  |     6|
+|170   |  \BITSLICE[60].ALU  |Bit_Slice_55     |     8|
+|171   |    Adder_Unit       |Full_Adder_75    |     2|
+|172   |    Logic_Unit       |Logical_Unit_76  |     6|
+|173   |  \BITSLICE[61].ALU  |Bit_Slice_56     |     8|
+|174   |    Adder_Unit       |Full_Adder_73    |     2|
+|175   |    Logic_Unit       |Logical_Unit_74  |     6|
+|176   |  \BITSLICE[62].ALU  |Bit_Slice_57     |     8|
+|177   |    Adder_Unit       |Full_Adder_71    |     2|
+|178   |    Logic_Unit       |Logical_Unit_72  |     6|
+|179   |  \BITSLICE[63].ALU  |Bit_Slice_58     |    18|
+|180   |    Adder_Unit       |Full_Adder_69    |     4|
+|181   |    Decoder_Unit     |Decoder          |     6|
+|182   |    Logic_Unit       |Logical_Unit_70  |     8|
+|183   |  \BITSLICE[6].ALU   |Bit_Slice_59     |     8|
+|184   |    Adder_Unit       |Full_Adder_67    |     2|
+|185   |    Logic_Unit       |Logical_Unit_68  |     6|
+|186   |  \BITSLICE[7].ALU   |Bit_Slice_60     |     8|
+|187   |    Adder_Unit       |Full_Adder_65    |     2|
+|188   |    Logic_Unit       |Logical_Unit_66  |     6|
+|189   |  \BITSLICE[8].ALU   |Bit_Slice_61     |     8|
+|190   |    Adder_Unit       |Full_Adder_63    |     2|
+|191   |    Logic_Unit       |Logical_Unit_64  |     6|
+|192   |  \BITSLICE[9].ALU   |Bit_Slice_62     |     8|
+|193   |    Adder_Unit       |Full_Adder       |     2|
+|194   |    Logic_Unit       |Logical_Unit     |     6|
++------+---------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 799.941 ; gain = 469.934
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 64 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 799.941 ; gain = 469.934
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 799.941 ; gain = 469.934
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 812.094 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 908.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+349 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 908.660 ; gain = 603.488
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 908.660 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/git/VHDL/ALU/ALU.runs/synth_1/ALU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ALU_utilization_synth.rpt -pb ALU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 23 18:59:39 2021...
